@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const a = [
+  { 
+    firstName: 'Sofia', 
+    greeting: 'Hi Sofia, I would like to invite u for a dinner'
+  },
+  { 
+    firstName: 'Madison',
+    greeting: 'Hi Madison, I would like to invite u for a dinner'
+  },
+  { 
+    firstName: 'Adrien',
+    greeting: 'Hi Adrien, I would like to invite u for a dinner'
+  }
+];
+
+ const arr2 = [{
+  firstName:"Momo",
+    greeting: 'Hi Momo, I would like to invite u for a dinner'
+
+ } ,
+ ...a
+];
+ arr2.splice(2 , 0 , {firstName: "Mina",
+greeting: "Hi Mina, I would like to invite u for a dinner"
+});
+ 
+arr2.push({firstName: "Jennie",
+greeting: "Hi Jennie, I would like to invite u for a dinner"
+});
+
+arr2.pop();
+arr2.pop();
+arr2.pop();
+arr2.pop();
+arr2.push({message: "Sorry Jennie! I’m sorry I can’t invite you to dinner."});
+arr2.push({message: "Sorry Adrien! I’m sorry I can’t invite you to dinner."});
+arr2.push({message: "Sorry Madison! I’m sorry I can’t invite you to dinner."});
+arr2.push({message: "Sorry Mina! I’m sorry I can’t invite you to dinner."});
+arr2.push({message: "Sofia and Momo you are still invited."});
+
+for(let i = 0; i < arr2.length; i++){
+  console.log(arr2[i]);
+}
+
+
+    </script>
+</body>
+</html>

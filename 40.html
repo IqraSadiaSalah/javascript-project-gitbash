@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function make_album(artist, title, tracks = 0){
+    album_dict = {
+        'artist': artist,
+        'title': title
+    }
+    if(tracks){
+        album_dict['tracks'] = tracks;
+    }
+    return album_dict
+}
+
+let album = make_album('beethoven', 'ninth symphony')
+console.log(album);
+album = make_album('willie nelson', 'red-headed stranger')
+console.log(album);
+album = make_album('iron maiden', 'piece of mind', tracks=8)
+console.log(album);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = [
+  { 
+    firstName: 'Sofia', 
+    greeting: 'Hi Sofia, I would like to invite u for a dinner'
+  },
+  { 
+    firstName: 'Lukas',
+    greeting: 'Hi Lukas, I would like to invite u for a dinner'
+  },
+  { 
+    firstName: 'Madison',
+    greeting: 'Hi Madison, I would like to invite u for a dinner'
+  } 
+];
+const result = a.map(person => {
+  const greeting = `Hi ${person.firstName}, Would u like to come to my house for a dinner?`;
+  return {...person, greeting};
+});
+
+console.log(result); 
+    </script>
+</body>
+</html>

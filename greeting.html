@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    const a = [
+  { 
+    firstName: 'Sofia', 
+    greeting: 'Hi Sofia, what do you like the most about Java?'
+  },
+  { 
+    firstName: 'Lukas',
+    greeting: 'Hi Lukas, what do you like the most about Python?'
+  },
+  { 
+    firstName: 'Madison',
+    greeting: 'Hi Madison, what do you like the most about Ruby?'
+  } 
+];
+const result = a.map(person => {
+  const greeting = `Hi ${person.firstName}, what do you like the most about ${person.language}?`;
+  return {...person, greeting};
+});
+
+console.log(result);    </script>
+</body>
+</html>
